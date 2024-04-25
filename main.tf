@@ -1,5 +1,5 @@
 resource "aws_vpc" "mtc_vpc" {
-  cidr_block           = "10.123.0.0/16"
+  cidr_block           = "##use individual ip"
   enable_dns_hostnames = true
   enable_dns_support   = true
 
@@ -55,7 +55,7 @@ resource "aws_security_group" "mtc_sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["122.172.83.128/32"]
+    cidr_blocks = ["##use individual ip"]
   }
 
   egress {
